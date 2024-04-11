@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.member {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.membership {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.membership font {
+  color: #ff6e7f;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  border: 1px solid black;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.inner {
+  padding: 20px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 80px;
+}
+
+.pricing span {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.pricing small {
+  font-size: 16px;
+  color: #7f8c9b;
+  margin-left: 4px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6e7f;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.features {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.features li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ff6e7f;
+  margin-right: 10px;
+}
+
+.button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: white;
+  background-color: #ff6e7f;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}

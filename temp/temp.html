@@ -1,0 +1,57 @@
+
+<html>
+
+ <head>
+
+<title>idle Redirect</title>
+
+ </heads>
+
+<body>
+
+<script>
+
+function redirectToAnotherPage() {
+
+
+
+window.location.href = "https://google.com";
+
+ }
+
+ var IDLE_TIMEOUT = 10000;
+
+ var idleTimer;
+
+
+
+ function resetIdleTimer() {  clearTimeout(idleTimer);
+
+
+
+idleTimer = setTimeout(redirectToAnotherPage, IDLE_TIMEOUT);
+
+}
+
+ window.onload = resetIdleTimer
+
+ window.onmousemove = resetIdleTimer
+
+ window.onmousedown = resetIdleTimer
+
+ window.onclick = resetIdleTimer
+
+ window.onscroll = resetIdleTimer
+
+ window.onkeypress = resetIdleTimer
+
+
+
+ </script>
+
+
+
+</body>
+
+</html>
+
